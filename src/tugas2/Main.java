@@ -18,7 +18,7 @@ public class Main {
         int ulang;
         System.out.println("Nama    : Nur Rosydatun Nafiah");
         System.out.println("NIM     : 123200001");
-        System.out.println("Kelas   : ");
+        System.out.println("Kelas   : Praktikum PBO (IF-F)");
         do{
             int pilih;
             double panjang, lebar, tinggiBalok, jari, tinggiTabung;
@@ -60,7 +60,7 @@ public class Main {
                 System.out.println("Luas Permukaan Tabung  : " + tabung.luasPermukaan());
             }
             else if (pilih == 3){
-                pilihan = false;
+                System.exit(0);
             }
             else{
                 System.out.println("Silahkan Input Ulang!!!");
@@ -72,8 +72,8 @@ public class Main {
                 pilihan =  true;
                 System.out.println("\n\n\n");
             }
-            else if (ulang == 2){
-                pilihan = false;
+            else if (ulang == 0){
+                System.exit(0);
             }
        }while(pilihan = true);
     }
